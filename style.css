@@ -1,0 +1,347 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: #f5f5f5; /* Light beige background */
+}
+
+a {
+    color: #6d4c41; /* Dark brown */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    background: #3e2723; /* Dark brown */
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Hero Section */
+#home {
+    background: #6d4c41; /* Medium brown */
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.intro h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.intro h2 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.intro p {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.button {
+    background: #fff;
+    color: #6d4c41; /* Dark brown */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* About Section */
+#about {
+    padding: 40px 20px;
+    background: #fff;
+}
+
+#about h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #3e2723; /* Dark brown */
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.profile-photo {
+    border-radius: 50%;
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin-right: 50px; /* Increased space between photo and description */
+    border: 5px solid #6d4c41; /* Dark brown */
+}
+
+.about-text {
+    max-width: 800px;
+    font-size: 18px; /* Adjusted font size to match the photo size */
+    line-height: 1.6; /* Improved readability */
+}
+
+/* Projects Section */
+#projects {
+    padding: 40px 20px;
+    background: #fafafa; /* Very light beige */
+}
+
+#projects h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #3e2723; /* Dark brown */
+}
+
+.projects-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px 0;
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* For Firefox */
+}
+
+.projects-container::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Edge */
+}
+
+.project {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    flex: 0 0 auto;
+    max-width: 300px;
+    text-align: center;
+}
+
+.project h3 {
+    margin: 0 0 10px;
+    color: #6d4c41; /* Dark brown */
+}
+
+.project p {
+    margin: 5px 0;
+}
+
+.project a {
+    color: #6d4c41; /* Dark brown */
+    margin-right: 10px;
+}
+
+/* Skills Section */
+#skills {
+    padding: 40px 20px;
+    background: #fff;
+}
+
+#skills h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #3e2723; /* Dark brown */
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.skill-block {
+    background: #fafafa; /* Very light beige */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    flex: 1 1 200px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.skill-block h3 {
+    color: #6d4c41; /* Dark brown */
+    margin-top: 0;
+}
+
+/* Certifications Section */
+#certifications {
+    padding: 40px 20px;
+    background: #fafafa; /* Very light beige */
+}
+
+#certifications h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #3e2723; /* Dark brown */
+}
+
+.certifications-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px 0;
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* For Firefox */
+}
+
+.certifications-container::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Edge */
+}
+
+.certification {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    flex: 0 0 auto;
+    max-width: 250px;
+    text-align: center;
+    word-wrap: break-word; /* Prevents text overflow */
+}
+
+.certification h3 {
+    margin: 0 0 10px;
+    color: #6d4c41; /* Dark brown */
+}
+
+.certification p {
+    margin: 5px 0;
+}
+
+/* Contact Section */
+#contact {
+    padding: 40px 20px;
+    background: #fff;
+    text-align: center;
+}
+
+#contact h2 {
+    margin-bottom: 20px;
+    color: #3e2723; /* Dark brown */
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#contact button {
+    background: #6d4c41; /* Dark brown */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#contact button:hover {
+    background: #3e2723; /* Darker brown */
+}
+
+#contact p {
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    background: #3e2723; /* Dark brown */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* New Styles */
+.container {
+    position: relative;
+    width: 250px;
+    /* Choose your size */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.container button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: #313638;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.icon {
+    width: 26px;
+    height: 26px;
+    fill: #fff;
+}
+
+.container button:nth-child(1):hover {
+    background-color: #2753a7;
+}
+
+.container button:nth-child(2):hover {
+    background-color: #cd242b;
+}
+
+.container button:nth-child(3):hover {
+    background-color: #55acee;
+}
+
+.container button:nth-child(4):hover {
+    background-color: #0274b3;
+}
+
+.title {
+    color: gray;
+    font-weight: 700;
+    font-size: 17px;
+    position: absolute;
+    top: -35px;
+    left: 0;
+}
